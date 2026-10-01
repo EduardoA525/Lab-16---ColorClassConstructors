@@ -1,14 +1,6 @@
-/*
-Modify your Lab 14, Color class, such that it leverages constructors. 
-Create a default constructor, a parameter constructor, 
-    and at least one partial constructor.
-
-In main(), instantiate a variety of Color objects using a variety of types of constructors.
-*/
-
 //Eduardo Avila
 //COMSC - 210 - 5293
-//Lab 14 - Color Class
+//Lab 16 - Color Class w/ Constructors
 
 #include <iostream>
 using namespace std;
@@ -62,30 +54,11 @@ public:
 
 int main(){
 
-    //Create colors and put random data in them
+    //Create colors with constructors and put random data in them
     Color color1;
+    Color color2(100);
+    Color color3(45,255,160);
 
-    color1.setRed(100);
-    color1.setGreen(20);
-    color1.setBlue(0);
-
-    
-
-    Color color2;
-
-    color2.setRed(0);
-    color2.setGreen(230);
-    color2.setBlue(80);
-
-    
-
-    Color color3;
-
-    color3.setRed(130);
-    color3.setGreen(90);
-    color3.setBlue(245);
-
-    
     color1.print();
     color2.print();
     color3.print();
