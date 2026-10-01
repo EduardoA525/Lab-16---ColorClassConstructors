@@ -22,6 +22,25 @@ private:
     int blue;
 
 public: 
+    //Constructors
+    Color(){ // Default Constructor
+        red = 0;
+        green = 0;
+        blue = 0;
+    }
+
+    Color(int r){ //Partial Constructor
+        red = r;
+        green = 0;
+        blue = 0;
+    }
+
+    Color(int r, int g, int b){ //Full Constructor
+        red = r;
+        green = g;
+        blue = b;
+    }
+
     //Setters and Getters
     int getRed()        { return red; }
     void setRed(int r)  { red = r; }
@@ -50,7 +69,7 @@ int main(){
     color1.setGreen(20);
     color1.setBlue(0);
 
-    color1.print();
+    
 
     Color color2;
 
@@ -58,7 +77,7 @@ int main(){
     color2.setGreen(230);
     color2.setBlue(80);
 
-    color2.print();
+    
 
     Color color3;
 
@@ -66,6 +85,9 @@ int main(){
     color3.setGreen(90);
     color3.setBlue(245);
 
+    
+    color1.print();
+    color2.print();
     color3.print();
 
     return 0;
